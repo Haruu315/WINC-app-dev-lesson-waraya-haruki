@@ -1,79 +1,154 @@
 <!DOCTYPE html>
+<!-- ページがHTML5で書かれていることをブラウザに伝える宣言 -->
+
 <html lang="ja">
+<!-- ページ全体を囲む大元のタグ。lang="ja" は「このページは日本語」という意味 -->
+
   <head>
+  <!-- ブラウザへの設定情報をまとめる場所。画面には表示されない -->
+
     <meta charset="UTF-8" />
+    <!-- 文字コードの指定。UTF-8にしておけば日本語が文字化けしない -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- スマホで見たときに画面サイズに合わせて表示するための設定 -->
+
     <title>藁谷遙来 | 自己紹介</title>
+    <!-- ブラウザのタブに表示されるページのタイトル -->
 
     <link rel="stylesheet" href="./style.css" />
+    <!-- 外部CSSファイルを読み込む。href="./style.css" は同じフォルダのstyle.cssを指定 -->
+
   </head>
+
   <body>
+  <!-- 画面に実際に表示される内容をここに書く -->
 
     <header>
+    <!-- ページの「ヘッダー（上部）」を表すタグ。サイト名やナビゲーションを置くことが多い -->
+
       <h1><ruby>藁谷遙来<rt>わらやはるき</rt></ruby></h1>
+      <!-- h1: ページで一番大きな見出し。1ページに1つが基本
+           ruby: ふりがなをつけるタグ
+           rt: ruby の中で、ふりがな本体を囲むタグ -->
+
       <p>ZEN大学 知能情報社会学部 2年生</p>
+      <!-- p: 段落（paragraph）。文章のかたまりを表す最もよく使うタグ -->
+
     </header>
 
     <main>
+    <!-- ページのメインコンテンツを表すタグ。ヘッダー・フッター以外の主な内容を囲む -->
 
       <section>
+      <!-- 関連するコンテンツをグループにまとめるタグ。テーマごとにページを区切るイメージ -->
+
         <h2>About me</h2>
+        <!-- h2: h1の次に大きい見出し。セクションのタイトルに使う -->
+
         <img src="./IMG_4463.JPG" alt="藁谷遙来の写真" width="250" />
+        <!-- 画像を表示するタグ（閉じタグ不要）
+             src: 表示する画像ファイルのパス
+             alt: 画像が読み込めないときや読み上げ時に使われる説明文
+             width: 画像の横幅（ピクセル単位） -->
+
         <address>
           出身: 東京都足立区
         </address>
+        <!-- 住所や連絡先を表すタグ。見た目はイタリック体になることが多い -->
+
         <p>
           プログラミングを勉強中の<strong>19歳</strong>です。
+          <!-- strong: テキストを「重要」として強調する。見た目は太字になる -->
+
           WINCというエンジニアサークルに所属しており、
           プログラミングの基礎を学んでいます。
+
           <em>2026年内にインターンを開始することを目標に日々勉強中です。</em>
+          <!-- em: テキストを強調する（emphasis）。見た目はイタリック体になる。
+               strong より少し弱い強調のイメージ -->
         </p>
+
         <p>
-          生年月日: <time datetime="2006-10-31">2006年10月31日</time> 
+          生年月日: <time datetime="2006-10-31">2006年10月31日</time>
+          <!-- time: 日付や時刻を表すタグ
+               datetime: 機械が読める形式で日付を記述する属性（YYYY-MM-DD形式） -->
         </p>
+
         <p>MBTI: <strong>INTJ</strong></p>
-        <p>好きなアーティスト: <strong>サカナクション</strong>
+
+        <p>好きなアーティスト: <strong>サカナクション</strong></p>
+        <!-- ※ 元のHTMLでは閉じタグ </p> が抜けていたので追加しました -->
+
       </section>
 
       <section>
+
         <h2>所属サークル</h2>
+
         <ul>
+        <!-- ul: 順序のない箇条書きリスト（unordered list）。黒丸で表示される -->
+
           <li>バドミントンサークル <strong>J-Birds</strong></li>
+          <!-- li: リストの各項目（list item）。ul または ol の中に書く -->
+
           <li>テニスサークル <strong>硬庭ペンギン🐧</strong></li>
           <li>情報技研 <strong>WINC</strong></li>
         </ul>
+
       </section>
 
       <section>
+
         <h2>Skills / Hobbies</h2>
+
         <h3>Skills</h3>
+        <!-- h3: h2の次に大きい見出し。セクション内の小見出しに使う -->
+
         <ul>
           <li>HTML / CSS</li>
           <li>JavaScript（基礎の基礎）</li>
         </ul>
+
         <h3>Hobbies</h3>
+
         <ul>
           <li>バドミントン</li>
           <li>テニス</li>
           <li>カラオケ</li>
           <li>インデックス投資（個別株は高くてまだ手が届かず...）</li>
         </ul>
+
       </section>
 
       <section>
+
         <h2>好きな言葉</h2>
+
         <blockquote>
           「天は自ら助くる者を助く。」
         </blockquote>
+        <!-- blockquote: 引用文を表すタグ。他の人の言葉や格言などに使う -->
+
       </section>
 
     </main>
 
     <footer>
+    <!-- ページの「フッター（下部）」を表すタグ。コピーライトやリンクを置くことが多い -->
+
       <a href="https://www.instagram.com/whk_0631/?hl=bg" target="_blank" rel="noopener noreferrer">
+      <!-- a: リンクを作るタグ（anchor）
+           href: リンク先のURL
+           target="_blank": リンクを新しいタブで開く
+           rel="noopener noreferrer": 新しいタブを開くときのセキュリティ対策 -->
+
         Instagramはこちら
+
       </a>
+
     </footer>
 
   </body>
+
 </html>
