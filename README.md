@@ -1,1 +1,1 @@
-.gitignore 何もの
+WINC学習
