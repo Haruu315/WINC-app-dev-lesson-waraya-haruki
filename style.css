@@ -92,13 +92,20 @@ footer {
   text-align: center;
   padding: 32px 20px;
   font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
 footer a {
-  color: #3498db;
+  color: white;
   text-decoration: none;
+  background-color: #3498db;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  background-color: #2178b0;
 }
