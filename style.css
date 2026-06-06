@@ -9,3 +9,14 @@ header {
   text-align: center;
   padding: 40px 20px;
 }
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #aab8c2;
+  margin: 0;
+}
