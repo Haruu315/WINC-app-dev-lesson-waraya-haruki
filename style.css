@@ -55,3 +55,10 @@ section img {
   margin: 0 0 20px 0;
   width: 200px;
 }
+
+address {
+  font-style: normal;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
