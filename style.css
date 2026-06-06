@@ -87,3 +87,18 @@ blockquote {
   font-size: 1rem;
   color: #2c3e50;
 }
+
+footer {
+  text-align: center;
+  padding: 32px 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
