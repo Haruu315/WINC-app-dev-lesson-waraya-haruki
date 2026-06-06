@@ -49,3 +49,9 @@ section h3 {
   margin: 20px 0 8px;
 }
 
+section img {
+  display: block;
+  border-radius: 8px;
+  margin: 0 0 20px 0;
+  width: 200px;
+}
